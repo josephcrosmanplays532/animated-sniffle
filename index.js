@@ -19,7 +19,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/test', function(request, response) {
-	response.json( request );
+	response.json( {"testing":"variable","myvar":{"veryyes":true,"suchnope":false},"heyho":"merry Christmas"} );
 });
 
 app.listen(app.get('port'), function() {
