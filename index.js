@@ -19,7 +19,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/test', function(request, response) {
-	response.send( JSON.stringify( request ) );
+	response.render('views/pages/index');
 });
 
 app.listen(app.get('port'), function() {
