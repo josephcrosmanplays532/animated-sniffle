@@ -19,7 +19,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/test', function(request, response) {
-	response.send( request );
+	response.json( request );
 });
 
 app.listen(app.get('port'), function() {
